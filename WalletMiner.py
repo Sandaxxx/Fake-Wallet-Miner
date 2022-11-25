@@ -1,4 +1,3 @@
-#basic fake eth wallet miner by drak-o
 
 
 import random
@@ -17,10 +16,9 @@ def clear():
 
 
 
-website = "(Your website)" #put your website here
 count1 = 0
 count2 = 0
-eth_ammount = str(round(random.uniform(0.5, 2), 4)) #generates fake eth ammount
+eth_count = str(round(random.uniform(0.5, 2), 4)) #generates fake eth ammount
 random_id = ''
 list_ = str('A''B''C''D''E''F''G''H''I''J''K''L''M''N''O''P''Q''R''S''T''U''V''W''X''Y''Z''a''b''c''d''e''f''g''h''i''j''k''l''m''n''o''p''q''r''s''t''u''v''w''x''y''z''1''2''3''4''5''6''7''8''9''0')
 
@@ -63,11 +61,10 @@ while count1<random.randint(1000000,1500000): #number of tries until you get a f
     
 
 clear()    
-os.system('color 2')
-print("> ADDRESS:  0x"+random_id2 + "   | BALANCE:  TRON = " + eth_ammount) #the text that get's displayed when they "find a wallet"
-
+os.system('color 3')
+print("> Miner  OOOx"+random_id2 + "   | BALANCE:  TRON = " + eth_count) 
 print("> Attemptin withdrawal...")
 time.sleep(5)
-print("> Error number 4132, visit "+ website +" to complete withdrawal process") #fake error message that get's displayed
+print("> Success ") 
 
-os.system('pause')
+os.system('cls')
